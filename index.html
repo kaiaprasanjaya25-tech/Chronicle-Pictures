@@ -1,0 +1,1135 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Chronicle Pictures Production</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1d4ed8',      /* Deep Cobalt Royal Blue from PDF */
+                            navy: '#0f172a',      /* Deep Slate Navy */
+                            accent: '#2563eb',    /* Vibrant Blue Accent */
+                            emerald: '#059669',   /* Emerald Green accent from PDF cover */
+                            green: '#10b981',     /* Bright emerald */
+                            lightBg: '#f8fafc',   /* Subtle grayish background */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #0f172a;
+        }
+
+        .gradient-text-blue {
+            background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #059669 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .aperture-spin {
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .aperture-spin:hover {
+            transform: rotate(90deg) scale(1.05);
+        }
+
+        /* Timeline connector line styling for PRIME vertical layout */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 27px;
+            width: 3px;
+            background: linear-gradient(to bottom, #1d4ed8, #2563eb, #059669, #0f172a);
+            z-index: 0;
+        }
+
+        @media (max-width: 640px) {
+            .timeline-line::before {
+                left: 23px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo & Brand Name -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-full border-2 border-slate-900 flex items-center justify-center p-1 bg-white shadow-sm aperture-spin">
+                        <svg viewBox="0 0 100 100" class="w-full h-full fill-slate-900">
+                            <!-- SVG Camera Lens Aperture Logo matching PDF Logo -->
+                            <circle cx="50" cy="50" r="46" fill="none" stroke="#0f172a" stroke-width="6"/>
+                            <path d="M 50 15 L 75 35 L 60 55 Z" />
+                            <path d="M 75 35 L 85 65 L 60 65 Z" />
+                            <path d="M 85 65 L 60 85 L 45 65 Z" />
+                            <path d="M 60 85 L 25 75 L 40 55 Z" />
+                            <path d="M 25 75 L 15 45 L 40 45 Z" />
+                            <path d="M 15 45 L 40 15 L 55 35 Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-extrabold tracking-wider text-slate-900 uppercase leading-none">CHRONICLE</span>
+                        <span class="block text-[11px] font-bold tracking-widest text-blue-700 uppercase">PICTURES</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                    <a href="#tentang" class="hover:text-blue-700 transition-colors">Tentang Kami</a>
+                    <a href="#visi-misi" class="hover:text-blue-700 transition-colors">Visi & Misi</a>
+                    <a href="#prime-values" class="hover:text-blue-700 transition-colors">Nilai Utama (P.R.I.M.E)</a>
+                    <a href="#tim-kami" class="hover:text-blue-700 transition-colors">Tim Struktur</a>
+                    <a href="#layanan" class="hover:text-blue-700 transition-colors">Layanan Kami</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="https://wa.me/6288251467890" target="_blank" class="px-5 py-2.5 rounded-full bg-slate-900 text-white font-semibold text-sm hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-lg text-emerald-400"></i>
+                        <span>Hubungi Kami</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#tentang" class="block py-2 text-slate-700 font-medium hover:text-blue-700">Tentang Kami</a>
+            <a href="#visi-misi" class="block py-2 text-slate-700 font-medium hover:text-blue-700">Visi & Misi</a>
+            <a href="#prime-values" class="block py-2 text-slate-700 font-medium hover:text-blue-700">Nilai Utama (P.R.I.M.E)</a>
+            <a href="#tim-kami" class="block py-2 text-slate-700 font-medium hover:text-blue-700">Tim Struktur</a>
+            <a href="#layanan" class="block py-2 text-slate-700 font-medium hover:text-blue-700">Layanan Kami</a>
+            <a href="https://wa.me/6288251467890" target="_blank" class="block w-full text-center mt-4 py-3 rounded-xl bg-blue-700 text-white font-semibold">
+                <i class="fab fa-whatsapp mr-2"></i> Hubungi WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-white pt-10 pb-20 overflow-hidden border-b border-slate-100">
+        <!-- Abstract subtle background elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-emerald-100/40 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Header -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-widest">
+                        <i class="fas fa-video text-blue-600"></i> Event & Corporate Production House
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                        Behind Every Great Moment, <span class="gradient-text-blue block mt-1">There Is A Story</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        <strong class="text-slate-900 font-semibold">Chronicle Pictures</strong> adalah Production House yang berfokus pada layanan <strong class="text-blue-700">Event</strong> dan <strong class="text-blue-700">Corporate</strong>. Kami menghadirkan solusi visual kreatif dan profesional untuk membangun citra, memperkuat komunikasi, dan menciptakan pengalaman yang berkesan melalui setiap karya.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap gap-4 items-center">
+                        <a href="#layanan" class="px-7 py-3.5 rounded-full bg-blue-700 hover:bg-blue-800 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-500/20 hover:shadow-xl hover:-translate-y-0.5">
+                            Jelajahi Layanan <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#tim-kami" class="px-7 py-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-sm transition-all">
+                            Kenali Tim Kami
+                        </a>
+                    </div>
+
+                    <!-- Company Highlights/Badges -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-100">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">100%</p>
+                            <p class="text-xs text-slate-500 font-medium">Profesional & Terpercaya</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-blue-700">7+</p>
+                            <p class="text-xs text-slate-500 font-medium">Tim Spesialis Produksi</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-emerald-600">Multi-Cam</p>
+                            <p class="text-xs text-slate-500 font-medium">Live Broadcast Ready</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Banner Photo -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1000" 
+                             alt="Chronicle Pictures Production Stage Event" 
+                             class="w-full h-[460px] object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-90"
+                             onerror="this.src='https://placehold.co/800x1000/0f172a/ffffff?text=Chronicle+Pictures+Production'">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                        
+                        <!-- Bottom Info Overlay -->
+                        <div class="absolute bottom-0 inset-x-0 p-6 text-white">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="px-2.5 py-1 bg-emerald-600 text-[10px] font-extrabold uppercase text-white rounded">LIVE EVENT</span>
+                                <span class="px-2.5 py-1 bg-blue-600 text-[10px] font-extrabold uppercase text-white rounded">CORPORATE</span>
+                            </div>
+                            <h3 class="text-lg font-bold">Creating Experiences. Capturing Excellence.</h3>
+                            <p class="text-xs text-slate-300 mt-1"><i class="fas fa-location-dot text-red-400 mr-1"></i> Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Decorative Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3 hidden sm:flex">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white text-xl shadow-md">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-medium">Fokus Produksi</p>
+                            <p class="text-sm font-bold text-slate-900">Event & Corporate Film</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI & VISI MISI -->
+    <section id="tentang" class="py-20 bg-slate-50/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Title -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold tracking-widest uppercase">
+                    Profil Perusahaan
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Mengenal Chronicle Pictures</h2>
+                <div class="w-16 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- About Card -->
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-100 mb-16">
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-700 text-2xl font-bold">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">Solusi Visual Kreatif & Profesional</h3>
+                        <p class="text-slate-600 leading-relaxed text-base">
+                            <strong class="text-slate-900">Chronicle Pictures</strong> adalah Production House yang berfokus secara penuh pada layanan <strong class="text-blue-700">Event</strong> dan <strong class="text-blue-700">Corporate Production</strong>. 
+                        </p>
+                        <p class="text-slate-600 leading-relaxed text-base">
+                            Kami menghadirkan solusi visual kreatif dan profesional untuk membangun citra positif, memperkuat komunikasi strategis perusahaan, dan menciptakan pengalaman visual yang berkesan serta abadi melalui setiap hasil karya sinematik.
+                        </p>
+                        <div class="pt-2 flex flex-wrap gap-3">
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold"><i class="fas fa-check text-emerald-500 mr-1.5"></i> High-End Broadcast Equipment</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold"><i class="fas fa-check text-emerald-500 mr-1.5"></i> Experienced Production Crew</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold"><i class="fas fa-check text-emerald-500 mr-1.5"></i> Multi-Camera Setup</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600" 
+                                 alt="Kamera Chronicle Pictures" 
+                                 class="rounded-2xl h-48 w-full object-cover shadow-md hover:scale-105 transition-transform"
+                                 onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Camera+Gear'">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&q=80&w=600" 
+                                 alt="Studio Editing Chronicle Pictures" 
+                                 class="rounded-2xl h-48 w-full object-cover shadow-md hover:scale-105 transition-transform mt-6"
+                                 onerror="this.src='https://placehold.co/600x400/1d4ed8/ffffff?text=Editing+Suite'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VISI & MISI SECTION -->
+            <div id="visi-misi" class="grid lg:grid-cols-12 gap-8">
+                
+                <!-- VISI CARD -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 via-slate-900 to-blue-950 text-white rounded-3xl p-8 sm:p-10 shadow-xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-blue-600/30 rounded-full blur-2xl"></div>
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-600/30 border border-blue-400/30 flex items-center justify-center text-blue-400 text-2xl font-bold mb-6">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4 class="text-xs font-bold tracking-widest text-blue-400 uppercase mb-2">Arah Masa Depan</h4>
+                        <h3 class="text-3xl font-extrabold mb-6">Visi Kami</h3>
+                        <p class="text-slate-200 text-base leading-relaxed">
+                            Menjadi Production House terpercaya yang menghadirkan solusi visual kreatif dan profesional untuk kebutuhan event dan corporate, serta mampu membangun citra, memperkuat komunikasi, dan menciptakan pengalaman yang berkesan melalui setiap karya.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <i class="fas fa-star text-amber-400 text-sm"></i>
+                        <span class="text-xs text-slate-300 font-medium">Standar Kualitas & Integritas Tinggi</span>
+                    </div>
+                </div>
+
+                <!-- MISI CARD -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-100">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-2xl font-bold mb-6">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h4 class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-2">Langkah Strategis</h4>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mb-6">Misi Kami</h3>
+
+                    <ul class="space-y-4 text-slate-600 text-sm sm:text-base">
+                        <li class="flex items-start gap-3.5">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold mt-0.5 shrink-0">1</div>
+                            <span>Menghasilkan dokumentasi dan konten visual berkualitas tinggi dengan standar profesional.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold mt-0.5 shrink-0">2</div>
+                            <span>Memberikan pelayanan yang responsif, tepat waktu, dan berorientasi pada kepuasan klien.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold mt-0.5 shrink-0">3</div>
+                            <span>Mengembangkan konsep kreatif yang sesuai dengan identitas dan tujuan setiap perusahaan maupun penyelenggara acara.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold mt-0.5 shrink-0">4</div>
+                            <span>Memanfaatkan teknologi produksi terkini untuk menciptakan pengalaman visual yang inovatif.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold mt-0.5 shrink-0">5</div>
+                            <span>Membangun hubungan jangka panjang dengan klien melalui kepercayaan, kualitas, dan konsistensi layanan.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CORE VALUES SECTION (P.R.I.M.E) - STRICTLY VERTICAL LAYOUT -->
+    <section id="prime-values" class="py-20 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold tracking-widest uppercase">
+                    Landasan Kerja
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Core Values (P.R.I.M.E)</h2>
+                <p class="text-slate-600 mt-2 text-base">Prinsip utama yang melandasi setiap alur kerja dan hasil produksi Chronicle Pictures</p>
+                <div class="w-16 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- VERTICAL TIMELINE / STACK FOR P.R.I.M.E -->
+            <div class="relative timeline-line space-y-8">
+
+                <!-- ITEM P -->
+                <div class="relative z-10 pl-14 sm:pl-16 group">
+                    <div class="absolute left-0 top-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-blue-700 text-white font-extrabold text-xl sm:text-2xl flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
+                        P
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all hover:border-blue-300">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">PROFESSIONALISM</h3>
+                            <i class="fas fa-user-tie text-blue-600 text-xl"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Bekerja dengan disiplin, bertanggung jawab, serta menjaga standar kualitas dalam setiap proses produksi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ITEM R -->
+                <div class="relative z-10 pl-14 sm:pl-16 group">
+                    <div class="absolute left-0 top-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-blue-800 text-white font-extrabold text-xl sm:text-2xl flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
+                        R
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all hover:border-blue-300">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">RELIABILITY</h3>
+                            <i class="fas fa-handshake text-blue-600 text-xl"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Menjadi tim yang dapat dipercaya, konsisten, tepat waktu, dan mampu memenuhi ekspektasi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ITEM I -->
+                <div class="relative z-10 pl-14 sm:pl-16 group">
+                    <div class="absolute left-0 top-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-600 text-white font-extrabold text-xl sm:text-2xl flex items-center justify-center shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform">
+                        I
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all hover:border-emerald-300">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">INNOVATION</h3>
+                            <i class="fas fa-lightbulb text-emerald-600 text-xl"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Terus menghadirkan ide, teknologi, dan pendekatan kreatif untuk menghasilkan karya yang relevan dan berdampak.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ITEM M -->
+                <div class="relative z-10 pl-14 sm:pl-16 group">
+                    <div class="absolute left-0 top-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-slate-900 text-white font-extrabold text-xl sm:text-2xl flex items-center justify-center shadow-lg shadow-slate-900/30 group-hover:scale-110 transition-transform">
+                        M
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all hover:border-slate-400">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">MEANINGFUL COLLABORATION</h3>
+                            <i class="fas fa-users-gear text-slate-700 text-xl"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Membangun komunikasi dan kolaborasi yang efektif dengan klien maupun sesama tim untuk mencapai hasil terbaik.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ITEM E -->
+                <div class="relative z-10 pl-14 sm:pl-16 group">
+                    <div class="absolute left-0 top-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-blue-600 text-white font-extrabold text-xl sm:text-2xl flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
+                        E
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all hover:border-blue-300">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">EXCELLENCE</h3>
+                            <i class="fas fa-award text-blue-600 text-xl"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Berkomitmen memberikan hasil terbaik pada setiap detail produksi, mulai dari perencanaan hingga distribusi akhir.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TEAM STRUCTURE SECTION - STRICTLY VERTICAL LAYOUT -->
+    <section id="tim-kami" class="py-20 bg-slate-50/70">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-bold tracking-widest uppercase">
+                    Struktur Organisasi (PDF)
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Tim Profesional Kami</h2>
+                <p class="text-slate-600 mt-2 text-base">Para ahli di balik keberhasilan setiap karya dan produksi Chronicle Pictures</p>
+                <div class="w-16 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- VERTICAL LIST OF ALL 7 TEAM MEMBERS -->
+            <div class="space-y-6">
+
+                <!-- MEMBER 1: Executive Producer / Founder -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                        <div class="relative shrink-0">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" 
+                                 alt="Bintang Surya Kencana - Executive Producer / Founder" 
+                                 class="w-32 h-40 sm:w-36 sm:h-44 object-cover object-top rounded-2xl border-2 border-blue-600 shadow-md"
+                                 onerror="this.src='https://placehold.co/300x400/0f172a/ffffff?text=Bintang+Surya'">
+                            <span class="absolute -bottom-3 -right-2 px-3 py-1 bg-blue-700 text-white text-[10px] font-extrabold tracking-wider rounded-full shadow">
+                                #01
+                            </span>
+                        </div>
+                        <div class="flex-1 text-center md:text-left space-y-3">
+                            <div>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    1. EXECUTIVE PRODUCER / FOUNDER
+                                </span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-2">Bintang Surya Kencana</h3>
+                            </div>
+                            <div class="border-t border-slate-100 pt-3">
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tugas & Tanggung Jawab:</p>
+                                <ul class="grid sm:grid-cols-2 gap-2 text-slate-600 text-sm">
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Menentukan strategi dan arah perusahaan.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Mengawasi seluruh proyek.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Mengambil keputusan utama.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Menjalin kerja sama dengan klien.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEMBER 2: Creative Director -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                        <div class="relative shrink-0">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" 
+                                 alt="Muhammad Alfalah - Creative Director" 
+                                 class="w-32 h-40 sm:w-36 sm:h-44 object-cover object-top rounded-2xl border-2 border-blue-600 shadow-md"
+                                 onerror="this.src='https://placehold.co/300x400/1d4ed8/ffffff?text=M.+Alfalah'">
+                            <span class="absolute -bottom-3 -right-2 px-3 py-1 bg-blue-700 text-white text-[10px] font-extrabold tracking-wider rounded-full shadow">
+                                #02
+                            </span>
+                        </div>
+                        <div class="flex-1 text-center md:text-left space-y-3">
+                            <div>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    2. CREATIVE DIRECTOR
+                                </span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-2">Muhammad Alfalah</h3>
+                            </div>
+                            <div class="border-t border-slate-100 pt-3">
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tugas & Tanggung Jawab:</p>
+                                <ul class="grid sm:grid-cols-2 gap-2 text-slate-600 text-sm">
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Mengembangkan konsep kreatif.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Membuat creative brief.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Mengarahkan visual dan storytelling.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Menjaga kualitas artistik setiap proyek.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEMBER 3: Production Manager -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                        <div class="relative shrink-0">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" 
+                                 alt="Rianti Khumaira - Production Manager" 
+                                 class="w-32 h-40 sm:w-36 sm:h-44 object-cover object-top rounded-2xl border-2 border-emerald-600 shadow-md"
+                                 onerror="this.src='https://placehold.co/300x400/059669/ffffff?text=Rianti'">
+                            <span class="absolute -bottom-3 -right-2 px-3 py-1 bg-emerald-600 text-white text-[10px] font-extrabold tracking-wider rounded-full shadow">
+                                #03
+                            </span>
+                        </div>
+                        <div class="flex-1 text-center md:text-left space-y-3">
+                            <div>
+                                <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    3. PRODUCTION MANAGER
+                                </span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-2">Rianti Khumaira</h3>
+                            </div>
+                            <div class="border-t border-slate-100 pt-3">
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tugas & Tanggung Jawab:</p>
+                                <ul class="grid sm:grid-cols-2 gap-2 text-slate-600 text-sm">
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-emerald-600 text-xs"></i> Menyusun timeline produksi.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-emerald-600 text-xs"></i> Mengatur jadwal kru.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-emerald-600 text-xs"></i> Mengelola kebutuhan produksi.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-emerald-600 text-xs"></i> Memastikan proyek berjalan sesuai target.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEMBER 4: Business Development & Client Relations -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                        <div class="relative shrink-0">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400" 
+                                 alt="Hilda Aprilla Ramadhani - Business Development & Client Relations" 
+                                 class="w-32 h-40 sm:w-36 sm:h-44 object-cover object-top rounded-2xl border-2 border-blue-600 shadow-md"
+                                 onerror="this.src='https://placehold.co/300x400/1d4ed8/ffffff?text=Hilda'">
+                            <span class="absolute -bottom-3 -right-2 px-3 py-1 bg-blue-700 text-white text-[10px] font-extrabold tracking-wider rounded-full shadow">
+                                #04
+                            </span>
+                        </div>
+                        <div class="flex-1 text-center md:text-left space-y-3">
+                            <div>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    4. BUSINESS DEVELOPMENT & CLIENT RELATIONS
+                                </span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-2">Hilda Aprilla Ramadhani</h3>
+                            </div>
+                            <div class="border-t border-slate-100 pt-3">
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tugas & Tanggung Jawab:</p>
+                                <ul class="grid sm:grid-cols-2 gap-2 text-slate-600 text-sm">
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Menyusun proposal dan presentasi.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Membangun hubungan baik dengan klien.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Mengembangkan relasi bisnis.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Menjaga kepuasan pelanggan.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEMBER 5: Technical Director -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                        <div class="relative shrink-0">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" 
+                                 alt="Muhammad Raditya Chandra - Technical Director" 
+                                 class="w-32 h-40 sm:w-36 sm:h-44 object-cover object-top rounded-2xl border-2 border-slate-800 shadow-md"
+                                 onerror="this.src='https://placehold.co/300x400/0f172a/ffffff?text=M.+Raditya'">
+                            <span class="absolute -bottom-3 -right-2 px-3 py-1 bg-slate-900 text-white text-[10px] font-extrabold tracking-wider rounded-full shadow">
+                                #05
+                            </span>
+                        </div>
+                        <div class="flex-1 text-center md:text-left space-y-3">
+                            <div>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    5. TECHNICAL DIRECTOR
+                                </span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-2">Muhammad Raditya Chandra</h3>
+                            </div>
+                            <div class="border-t border-slate-100 pt-3">
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tugas & Tanggung Jawab:</p>
+                                <ul class="grid sm:grid-cols-2 gap-2 text-slate-600 text-sm">
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-slate-800 text-xs"></i> Menentukan kebutuhan teknis.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-slate-800 text-xs"></i> Mengatur kamera, audio, lighting & peralatan.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-slate-800 text-xs"></i> Memastikan kualitas teknis selama produksi.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-slate-800 text-xs"></i> Mengawasi sistem live broadcast & multicam.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEMBER 6: Camera Operator & Photographer -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                        <div class="relative shrink-0">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" 
+                                 alt="Muhammad Nur Alif - Camera Operator & Photographer" 
+                                 class="w-32 h-40 sm:w-36 sm:h-44 object-cover object-top rounded-2xl border-2 border-blue-600 shadow-md"
+                                 onerror="this.src='https://placehold.co/300x400/1d4ed8/ffffff?text=M.+Nur+Alif'">
+                            <span class="absolute -bottom-3 -right-2 px-3 py-1 bg-blue-700 text-white text-[10px] font-extrabold tracking-wider rounded-full shadow">
+                                #06
+                            </span>
+                        </div>
+                        <div class="flex-1 text-center md:text-left space-y-3">
+                            <div>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    6. CAMERA OPERATOR & PHOTOGRAPHER
+                                </span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-2">Muhammad Nur Alif</h3>
+                            </div>
+                            <div class="border-t border-slate-100 pt-3">
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tugas & Tanggung Jawab:</p>
+                                <ul class="grid sm:grid-cols-2 gap-2 text-slate-600 text-sm">
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Mengoperasikan kamera video sinematik.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Mengoperasikan kamera saat syuting.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Mendokumentasikan setiap momen penting.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-blue-600 text-xs"></i> Menjaga sudut & komposisi visual presisi.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEMBER 7: Content Editor & Motion Graphic -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                        <div class="relative shrink-0">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" 
+                                 alt="Anisa Salma - Content Editor & Motion Graphic" 
+                                 class="w-32 h-40 sm:w-36 sm:h-44 object-cover object-top rounded-2xl border-2 border-emerald-600 shadow-md"
+                                 onerror="this.src='https://placehold.co/300x400/059669/ffffff?text=Anisa+Salma'">
+                            <span class="absolute -bottom-3 -right-2 px-3 py-1 bg-emerald-600 text-white text-[10px] font-extrabold tracking-wider rounded-full shadow">
+                                #07
+                            </span>
+                        </div>
+                        <div class="flex-1 text-center md:text-left space-y-3">
+                            <div>
+                                <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    7. CONTENT EDITOR & MOTION GRAPHIC
+                                </span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-2">Anisa Salma</h3>
+                            </div>
+                            <div class="border-t border-slate-100 pt-3">
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tugas & Tanggung Jawab:</p>
+                                <ul class="grid sm:grid-cols-2 gap-2 text-slate-600 text-sm">
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-emerald-600 text-xs"></i> Mengedit video purna produksi.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-emerald-600 text-xs"></i> Membuat subtitle video profesional.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-emerald-600 text-xs"></i> Menambahkan motion graphic, efek visual, color grading, & audio mixing.
+                                    </li>
+                                    <li class="flex items-center justify-center md:justify-start gap-2">
+                                        <i class="fas fa-circle-check text-emerald-600 text-xs"></i> Menyiapkan hasil akhir sesuai kebutuhan klien.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW (ELEGANT LAYOUT WITH HIGH QUALITY IMAGES) -->
+    <section id="layanan" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold tracking-widest uppercase">
+                    Layanan Utama
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Spesialisasi Produksi Kami</h2>
+                <p class="text-slate-600 mt-2 text-base">Menyediakan solusi produksi visual profesional berstandar tinggi untuk korporasi & event besar</p>
+                <div class="w-16 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- SECTION 1: CORPORATE SERVICES -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8 pb-3 border-b border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-blue-700 text-white flex items-center justify-center text-lg font-bold shadow-md">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900">Corporate Services</h3>
+                        <p class="text-xs text-slate-500">Kebutuhan Bisnis & Perusahaan (Branding, Komunikasi Internal, & Pemasaran)</p>
+                    </div>
+                </div>
+
+                <!-- Corporate Cards Grid with Visual Photos -->
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Corporate Card 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden bg-slate-900">
+                                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Company Profile Video Chronicle Pictures" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+                                     onerror="this.src='https://placehold.co/800x500/0f172a/ffffff?text=Company+Profile'">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-blue-700 text-white text-[10px] font-extrabold uppercase rounded-full shadow">
+                                    01. BRANDING
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                    Company Profile Video
+                                </h4>
+                                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                                    Video berdurasi 3-5 menit yang memperkenalkan sejarah, visi-misi, fasilitas, budaya kerja, dan keunggulan perusahaan untuk investor, klien, atau pameran bisnis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-700">
+                            <span><i class="fas fa-clock mr-1"></i> Durasi 3-5 Menit</span>
+                            <span>Sinematik HD <i class="fas fa-chevron-right text-xs"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- Corporate Card 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden bg-slate-900">
+                                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Product Launch Commercial Chronicle Pictures" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+                                     onerror="this.src='https://placehold.co/800x500/1d4ed8/ffffff?text=Product+Launch'">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-emerald-600 text-white text-[10px] font-extrabold uppercase rounded-full shadow">
+                                    02. COMMERCIAL
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                    Product Launch & Brand Film
+                                </h4>
+                                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                                    Video promosi sinematik untuk peluncuran produk/jasa baru yang berfokus pada fungsi, keunggulan, serta gaya hidup target konsumen perusahaan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-emerald-600">
+                            <span><i class="fas fa-bullhorn mr-1"></i> High Impact Visual</span>
+                            <span>Commercial <i class="fas fa-chevron-right text-xs"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- Corporate Card 3 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden bg-slate-900">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Corporate Recruitment Video Chronicle Pictures" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+                                     onerror="this.src='https://placehold.co/800x500/0f172a/ffffff?text=Recruitment'">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-slate-900 text-white text-[10px] font-extrabold uppercase rounded-full shadow">
+                                    03. HUMAN CAPITAL
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                    Corporate Recruitment Video
+                                </h4>
+                                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                                    Video employer branding untuk menarik talenta-talenta terbaik agar tertarik bergabung dan berkarier di perusahaan Anda secara profesional.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-800">
+                            <span><i class="fas fa-users-gear mr-1"></i> Employer Branding</span>
+                            <span>Talent Acquisition <i class="fas fa-chevron-right text-xs"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SECTION 2: EVENT SERVICES -->
+            <div>
+                <div class="flex items-center gap-3 mb-8 pb-3 border-b border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg font-bold shadow-md">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900">Event Services</h3>
+                        <p class="text-xs text-slate-500">Kebutuhan Acara & Kegiatan (Pendokumentasian & Tampilan Visual Event)</p>
+                    </div>
+                </div>
+
+                <!-- Event Cards Grid with Visual Photos -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Event Card 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden bg-slate-900">
+                                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Corporate Event Coverage Chronicle Pictures" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+                                     onerror="this.src='https://placehold.co/800x500/0f172a/ffffff?text=Event+Coverage'">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-blue-700 text-white text-[10px] font-extrabold uppercase rounded-full shadow">
+                                    EVENT COVERAGE
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                    Corporate Event Coverage
+                                </h4>
+                                <p class="text-slate-600 text-xs leading-relaxed">
+                                    Dokumentasi foto & video sinematik untuk RUPS, Gala Dinner, Anniversary Company, Awarding Night, hingga Town Hall Meeting.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-700">
+                            <span><i class="fas fa-video mr-1"></i> Foto & Video Highlight</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden bg-slate-900">
+                                <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Live Broadcast Multi-Camera Setup Chronicle Pictures" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+                                     onerror="this.src='https://placehold.co/800x500/1d4ed8/ffffff?text=Live+Broadcast'">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-emerald-600 text-white text-[10px] font-extrabold uppercase rounded-full shadow">
+                                    LIVE BROADCAST
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                    Live Broadcast & Multi-Camera Setup
+                                </h4>
+                                <p class="text-slate-600 text-xs leading-relaxed">
+                                    Pengoperasian sistem multi-kamera (multicam) dengan mixer untuk layar LED/Proyektor venue atau live stream Zoom, YouTube, Teams (Hybrid Event).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-emerald-600">
+                            <span><i class="fas fa-tower-broadcast mr-1"></i> Hybrid Stream Ready</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden bg-slate-900">
+                                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Conference & Exhibition Video Chronicle Pictures" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+                                     onerror="this.src='https://placehold.co/800x500/0f172a/ffffff?text=Conference'">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-slate-900 text-white text-[10px] font-extrabold uppercase rounded-full shadow">
+                                    CONFERENCE & EXPO
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                    Conference & Exhibition Video
+                                </h4>
+                                <p class="text-slate-600 text-xs leading-relaxed">
+                                    Liputan seminar, expo/pameran bisnis, booth documentation, serta highlight video harian (same-day edit) untuk promosi hari berikutnya.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-800">
+                            <span><i class="fas fa-bolt mr-1"></i> Same-Day Edit Available</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 4 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden bg-slate-900">
+                                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Public & Cultural Event Coverage Chronicle Pictures" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+                                     onerror="this.src='https://placehold.co/800x500/1d4ed8/ffffff?text=Public+Event'">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-blue-700 text-white text-[10px] font-extrabold uppercase rounded-full shadow">
+                                    FESTIVAL & PUBLIC
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                    Public & Cultural Event Coverage
+                                </h4>
+                                <p class="text-slate-600 text-xs leading-relaxed">
+                                    Dokumentasi festival musik, kompetisi olahraga, pameran seni, hingga brand activation/roadshow lintas kota.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-700">
+                            <span><i class="fas fa-icons mr-1"></i> Large Scale Festival</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 5 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden bg-slate-900">
+                                <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Event Opening Bumper Video Chronicle Pictures" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+                                     onerror="this.src='https://placehold.co/800x500/0f172a/ffffff?text=Bumper+Video'">
+                                <span class="absolute top-4 left-4 px-3 py-1 bg-emerald-600 text-white text-[10px] font-extrabold uppercase rounded-full shadow">
+                                    BUMPER VIDEO
+                                </span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                                    Event Opening / Bumper Video
+                                </h4>
+                                <p class="text-slate-600 text-xs leading-relaxed">
+                                    Video intro atau animasi pendek berdurasi 30-60 detik yang diputar di layar besar LED untuk membuka acara agar terasa megah & dramatis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-emerald-600">
+                            <span><i class="fas fa-play mr-1"></i> Durasi 30-60 Detik</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-16 bg-gradient-to-r from-blue-700 via-blue-800 to-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="px-3.5 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-bold tracking-widest uppercase">
+                Siap Berkolaborasi?
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold my-4">From Big Moments To Lasting Stories</h2>
+            <p class="text-blue-100 max-w-2xl mx-auto text-base sm:text-lg mb-8">
+                Mari wujudkan produksi acara dan video profile korporat Anda dengan standar kualitas visual sinematik tertinggi bersama Chronicle Pictures.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/6288251467890" target="_blank" class="px-8 py-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm shadow-xl transition-all flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i> Chat WhatsApp (+62 882-5146-7890)
+                </a>
+                <a href="mailto:hello@chronicalpictures.id" class="px-8 py-4 rounded-full bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm shadow-xl transition-all flex items-center gap-2">
+                    <i class="fas fa-envelope text-blue-600"></i> Kirim Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-1 bg-white">
+                            <svg viewBox="0 0 100 100" class="w-full h-full fill-slate-900">
+                                <circle cx="50" cy="50" r="46" fill="none" stroke="#0f172a" stroke-width="6"/>
+                                <path d="M 50 15 L 75 35 L 60 55 Z" />
+                                <path d="M 75 35 L 85 65 L 60 65 Z" />
+                                <path d="M 85 65 L 60 85 L 45 65 Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="block text-lg font-extrabold text-white uppercase tracking-wider leading-none">CHRONICLE</span>
+                            <span class="block text-[10px] font-bold text-blue-400 uppercase tracking-widest">PICTURES</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Production House yang berfokus pada layanan event dan corporate visual solution.
+                    </p>
+                    <p class="text-xs font-semibold text-slate-300 italic">
+                        "Celebrate The Future"
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#tentang" class="hover:text-blue-400 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#visi-misi" class="hover:text-blue-400 transition-colors">Visi & Misi</a></li>
+                        <li><a href="#prime-values" class="hover:text-blue-400 transition-colors">Core Values (P.R.I.M.E)</a></li>
+                        <li><a href="#tim-kami" class="hover:text-blue-400 transition-colors">Struktur Tim</a></li>
+                        <li><a href="#layanan" class="hover:text-blue-400 transition-colors">Layanan Utama</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Info from PDF -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Kontak Resmi (PDF)</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-center gap-2.5">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            <span>+62 882-5146-7890</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span>hello@chronicalpictures.id</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fas fa-globe text-blue-400"></i>
+                            <span>www.chronicalpictures.id</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fas fa-location-dot text-blue-400 mt-0.5"></i>
+                            <span>Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Social Media from PDF -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Media Sosial</h4>
+                    <a href="https://instagram.com/chronicalpictures" target="_blank" class="inline-flex items-center gap-3 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-blue-500 transition-all text-xs">
+                        <i class="fab fa-instagram text-pink-500 text-lg"></i>
+                        <span>@chronicalpictures</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="border-t border-slate-900 mt-12 pt-8 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Chronicle Pictures Production. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOBILE MENU TOGGLE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close menu when clicking nav links
+                const links = mobileMenu.querySelectorAll('a');
+                links.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html></pre>
+        </body>
+    </html>
