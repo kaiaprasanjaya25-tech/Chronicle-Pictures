@@ -156,22 +156,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 
-                <!-- Logo & Brand Name Modernized -->
-                <a href="#" class="flex items-center gap-3.5 group">
-                    <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-blue-950 flex items-center justify-center text-white shadow-lg border border-slate-700/50 group-hover:border-blue-500 group-hover:scale-105 transition-all duration-300">
-                        <!-- Custom Modern Camera Lens & Aperture Logo SVG -->
-                        <svg class="w-7 h-7 text-blue-400 group-hover:text-emerald-400 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                            <circle cx="12" cy="13" r="4"></circle>
-                            <path d="M12 9v1.5"></path>
-                            <path d="M15.5 11.5l-1.3.8"></path>
-                            <path d="M15.5 14.5l-1.3-.8"></path>
-                        </svg>
-                        <span class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-white animate-pulse"></span>
+                <!-- Logo & Brand Name -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="relative w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-white shadow-md group-hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-film text-xl text-blue-400 group-hover:text-white transition-colors"></i>
+                        <span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-emerald-500 border-2 border-white"></span>
                     </div>
                     <div>
-                        <span class="block text-xl font-black tracking-widest text-slate-900 uppercase leading-none font-sans">CHRONICLE</span>
-                        <span class="block text-[9.5px] font-extrabold tracking-[0.2em] text-blue-600 uppercase mt-1">PICTURES PRODUCTION</span>
+                        <span class="block text-xl font-black tracking-wider text-slate-900 uppercase leading-none">CHRONICLE</span>
+                        <span class="block text-[10px] font-bold tracking-widest text-blue-700 uppercase">PICTURES PRODUCTION</span>
                     </div>
                 </a>
 
@@ -199,7 +192,7 @@
                 </div>
 
                 <!-- Mobile Menu Toggle Button -->
-                <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Toggle Navigation">
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Toggle Navigation">
                     <i class="fas fa-bars text-xl" id="menuIcon"></i>
                 </button>
             </div>
@@ -207,13 +200,13 @@
 
         <!-- Mobile Drawer Navigation -->
         <div id="mobileMenu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl">
-            <a href="#tentang" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Tentang Kami</a>
-            <a href="#visi-misi" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Visi & Misi Perusahaan</a>
-            <a href="#prime-values" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Nilai Utama (P.R.I.M.E)</a>
-            <a href="#layanan" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Layanan Produksi</a>
-            <a href="#portfolio" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Portofolio & Showcase</a>
-            <a href="#peralatan" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Spesifikasi Peralatan (Gear)</a>
-            <a href="#tim-kami" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Struktur Tim Spesialis</a>
+            <a href="#tentang" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Tentang Kami</a>
+            <a href="#visi-misi" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Visi & Misi Perusahaan</a>
+            <a href="#prime-values" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Nilai Utama (P.R.I.M.E)</a>
+            <a href="#layanan" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Layanan Produksi</a>
+            <a href="#portfolio" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Portofolio & Showcase</a>
+            <a href="#peralatan" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Spesifikasi Peralatan (Gear)</a>
+            <a href="#tim-kami" class="block py-2 text-slate-700 font-semibold hover:text-blue-700 border-b border-slate-100">Struktur Tim Spesialis</a>
             
             <div class="pt-4 flex flex-col gap-3">
                 <button onclick="openEstimatorModal(); toggleMobileMenu();" class="w-full py-3 rounded-xl bg-blue-50 text-blue-700 font-bold text-sm border border-blue-200 flex items-center justify-center gap-2">
@@ -1436,151 +1429,201 @@
                         <i id="faqIcon-2" class="fas fa-chevron-down text-blue-700 transition-transform"></i>
                     </button>
                     <div id="faqContent-2" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
-                        Ya, kami melayani produksi di seluruh kota di Indonesia. Tim dan peralatan kami terbiasa dengan fleksibilitas mobilisasi tinggi untuk liputan event maupun company profile nasional.
+                        Ya, tim kami berbasis di Jakarta namun siap melakukan liputan event maupun syuting film korporat di seluruh wilayah Indonesia dengan dukungan peralatan terintegrasi.
                     </div>
                 </div>
 
                 <!-- FAQ 3 -->
                 <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
                     <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center text-sm sm:text-base">
-                        <span>Apakah kami mendapatkan file master serta hak cipta karya sepenuhnya?</span>
+                        <span>Bagaimana sistem pengerjaan Same-Day Edit untuk event?</span>
                         <i id="faqIcon-3" class="fas fa-chevron-down text-blue-700 transition-transform"></i>
                     </button>
                     <div id="faqContent-3" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
-                        Tentu saja. Setelah seluruh pembayaran selesai, file video resolusi 4K master serta hak lisensi penggunaan komersial akan diserahkan sepenuhnya kepada klien.
+                        Tim Content Editor kami akan berada langsung di venue acara untuk melakukan penarikan footage secara real-time dan merangkai highlight video dalam hitungan jam untuk diputar saat closing ceremony atau materi sosmed di hari yang sama.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-white pt-16 pb-12 border-t border-slate-900">
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-20 bg-gradient-to-r from-blue-700 via-blue-800 to-slate-950 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="px-4 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-black tracking-widest uppercase">
+                SIAP BERKOLABORASI?
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black my-4">From Big Moments To Lasting Stories</h2>
+            <p class="text-blue-100 max-w-2xl mx-auto text-base sm:text-lg mb-8 leading-relaxed">
+                Mari wujudkan produksi acara dan video profile korporat Anda dengan standar kualitas visual sinematik tertinggi bersama Chronicle Pictures Production.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/6288251467890" target="_blank" class="px-8 py-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-sm uppercase tracking-wider shadow-2xl transition-all flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i> Chat WhatsApp (+62 882-5146-7890)
+                </a>
+                <a href="mailto:hello@chroniclepictures.id" class="px-8 py-4 rounded-full bg-white text-slate-900 hover:bg-slate-100 font-extrabold text-sm uppercase tracking-wider shadow-2xl transition-all flex items-center gap-2">
+                    <i class="fas fa-envelope text-blue-700"></i> Kirim Email Resmi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
-                <div class="md:col-span-5 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-900 to-blue-900 border border-slate-700 flex items-center justify-center text-blue-400">
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                                <circle cx="12" cy="13" r="4"></circle>
-                            </svg>
+                        <div class="w-12 h-12 rounded-2xl bg-blue-700 text-white flex items-center justify-center text-xl shadow-md">
+                            <i class="fas fa-film"></i>
                         </div>
                         <div>
-                            <span class="block text-lg font-black tracking-widest text-white uppercase">CHRONICLE</span>
-                            <span class="block text-[9px] font-extrabold tracking-widest text-blue-400 uppercase">PICTURES PRODUCTION</span>
+                            <span class="block text-lg font-black text-white uppercase tracking-wider leading-none">CHRONICLE</span>
+                            <span class="block text-[10px] font-bold text-blue-400 uppercase tracking-widest">PICTURES PRODUCTION</span>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
-                        Production House spesialis Event Coverage & Corporate Film Production profesional di Jakarta & Nasional Indonesia.
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Production House yang berfokus pada layanan event dan corporate visual solution profesional di Indonesia.
+                    </p>
+                    <p class="text-xs font-extrabold text-slate-300 italic">
+                        "Celebrate The Future"
                     </p>
                 </div>
 
-                <div class="md:col-span-3 space-y-3">
-                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Tautan Cepat</h4>
-                    <ul class="space-y-2 text-xs text-slate-400">
-                        <li><a href="#tentang" class="hover:text-blue-400">Tentang Kami</a></li>
-                        <li><a href="#layanan" class="hover:text-blue-400">Layanan Produksi</a></li>
-                        <li><a href="#portfolio" class="hover:text-blue-400">Portofolio Showcase</a></li>
-                        <li><a href="#tim-kami" class="hover:text-blue-400">Struktur Tim</a></li>
+                <!-- Col 2: Navigation Links -->
+                <div>
+                    <h4 class="text-white font-bold text-xs mb-4 uppercase tracking-widest">Tautan Cepat</h4>
+                    <ul class="space-y-2.5 text-xs font-medium">
+                        <li><a href="#tentang" class="hover:text-blue-400 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#visi-misi" class="hover:text-blue-400 transition-colors">Visi & Misi</a></li>
+                        <li><a href="#prime-values" class="hover:text-blue-400 transition-colors">Core Values (P.R.I.M.E)</a></li>
+                        <li><a href="#layanan" class="hover:text-blue-400 transition-colors">Layanan Utama</a></li>
+                        <li><a href="#tim-kami" class="hover:text-blue-400 transition-colors">Struktur Tim</a></li>
                     </ul>
                 </div>
 
-                <div class="md:col-span-4 space-y-3">
-                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Kontak Utama</h4>
-                    <p class="text-xs text-slate-400"><i class="fas fa-location-dot text-red-500 mr-2"></i> Jakarta, Indonesia</p>
-                    <p class="text-xs text-slate-400"><i class="fab fa-whatsapp text-emerald-400 mr-2"></i> +62 882-5146-7890</p>
-                    <p class="text-xs text-slate-400"><i class="fas fa-envelope text-blue-400 mr-2"></i> info@chroniclepictures.com</p>
+                <!-- Col 3: Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-xs mb-4 uppercase tracking-widest">Kontak Resmi</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            <span>+62 882-5146-7890</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span>hello@chroniclepictures.id</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-globe text-blue-400"></i>
+                            <span>www.chroniclepictures.id</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-blue-400 mt-0.5"></i>
+                            <span>Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
                 </div>
+
+                <!-- Col 4: Social Media -->
+                <div>
+                    <h4 class="text-white font-bold text-xs mb-4 uppercase tracking-widest">Media Sosial</h4>
+                    <a href="https://instagram.com/chroniclepictures" target="_blank" class="inline-flex items-center gap-3 px-4 py-3 rounded-2xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-blue-500 transition-all text-xs">
+                        <i class="fab fa-instagram text-pink-500 text-xl"></i>
+                        <span class="font-bold">@chroniclepictures</span>
+                    </a>
+                </div>
+
             </div>
 
-            <div class="pt-8 text-center text-xs text-slate-500">
-                <p>&copy; 2026 Chronicle Pictures Production. Hak Cipta Dilindungi Undang-Undang.</p>
+            <div class="border-t border-slate-900 mt-12 pt-8 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Chronicle Pictures Production. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- VIDEO SHOWREEL MODAL -->
-    <div id="videoModal" class="fixed inset-0 z-[110] bg-slate-950/90 backdrop-blur-md hidden items-center justify-center p-4">
-        <div class="relative w-full max-w-4xl bg-black rounded-3xl overflow-hidden shadow-2xl">
-            <button onclick="closeVideoModal()" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/40">
-                <i class="fas fa-times"></i>
+    <!-- VIDEO SHOWCASE LIGHTBOX MODAL -->
+    <div id="videoModal" class="fixed inset-0 z-[100] hidden bg-slate-950/90 backdrop-blur-xl flex items-center justify-center p-4">
+        <div class="relative w-full max-w-4xl bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+            <button onclick="closeVideoModal()" aria-label="Close Video" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-slate-800 text-white hover:bg-red-600 transition-colors flex items-center justify-center">
+                <i class="fas fa-xmark text-lg"></i>
             </button>
-            <div class="aspect-video w-full">
-                <iframe id="videoIframe" class="w-full h-full" src="" title="Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="aspect-video w-full bg-black">
+                <iframe id="videoIframe" class="w-full h-full" src="" title="Chronicle Pictures Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- ESTIMATOR QUICK MODAL -->
+    <div id="estimatorModal" class="fixed inset-0 z-[100] hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="relative w-full max-w-xl bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+            <button onclick="closeEstimatorModal()" aria-label="Close Estimator" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 flex items-center justify-center">
+                <i class="fas fa-xmark text-base"></i>
+            </button>
+            <h3 class="text-xl font-black text-slate-900 mb-2">Estimasi Proyek Cepat</h3>
+            <p class="text-xs text-slate-500 mb-6">Pilih jenis kebutuhan produksi Anda untuk perkiraan biaya awal.</p>
+            
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Layanan</label>
+                    <select id="modalService" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs font-semibold text-slate-800">
+                        <option value="company-profile">Company Profile Video (3-5 Menit)</option>
+                        <option value="event-coverage">Corporate Event Coverage</option>
+                        <option value="live-broadcast">Live Broadcast Multicam</option>
+                        <option value="product-launch">Product Commercial</option>
+                    </select>
+                </div>
+
+                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                    <p class="text-xs text-blue-700 font-bold uppercase">Konsultasi Gratis via WhatsApp</p>
+                    <p class="text-xs text-slate-600 mt-1">Tim Business Development (Hilda) akan segera merespons pertanyaan Anda.</p>
+                </div>
+
+                <button onclick="sendModalWhatsApp()" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Hubungi Tim Sales Sekarang</span>
+                </button>
             </div>
         </div>
     </div>
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Reading Progress Bar Indicator
-        window.onscroll = function() {
-            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winScroll / height) * 100;
-            document.getElementById("scrollProgress").style.width = scrolled + "%";
-        };
+        // 1. Scroll Progress Bar logic
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const scrollBar = document.getElementById('scrollProgress');
+            if (scrollBar) scrollBar.style.width = scrolled + '%';
+        });
 
-        // Mobile Menu Toggle
+        // 2. Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                if (menuIcon) {
+                    menuIcon.classList.toggle('fa-bars');
+                    menuIcon.classList.toggle('fa-xmark');
+                }
+            });
+        }
+
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
+            if (mobileMenu) mobileMenu.classList.add('hidden');
+            if (menuIcon) {
+                menuIcon.classList.add('fa-bars');
+                menuIcon.classList.remove('fa-xmark');
+            }
         }
 
-        // Modal Video Player
-        function openVideoModal(url) {
-            document.getElementById('videoIframe').src = url;
-            document.getElementById('videoModal').classList.remove('hidden');
-            document.getElementById('videoModal').classList.add('flex');
-        }
-
-        function closeVideoModal() {
-            document.getElementById('videoIframe').src = '';
-            document.getElementById('videoModal').classList.add('hidden');
-            document.getElementById('videoModal').classList.remove('flex');
-        }
-
-        // Estimator Calculator Modal Open Scroll
-        function openEstimatorModal() {
-            document.getElementById('kalkulator').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Calculator Price Logic
-        function calculateEstimate() {
-            const service = document.getElementById('estService').value;
-            const days = parseInt(document.getElementById('estDays').value);
-            const drone = document.getElementById('addDrone').checked;
-            const multicam = document.getElementById('addMulticam').checked;
-            const motion = document.getElementById('addMotion').checked;
-
-            let baseMin = 10000000;
-            let baseMax = 18000000;
-
-            if (service === 'company-profile') { baseMin = 15000000; baseMax = 25000000; }
-            else if (service === 'live-broadcast') { baseMin = 20000000; baseMax = 35000000; }
-            else if (service === 'product-launch') { baseMin = 18000000; baseMax = 30000000; }
-            else if (service === 'event-bumper') { baseMin = 8000000; baseMax = 15000000; }
-
-            baseMin *= (1 + (days - 1) * 0.4);
-            baseMax *= (1 + (days - 1) * 0.4);
-
-            if (drone) { baseMin += 3000000; baseMax += 5000000; }
-            if (multicam) { baseMin += 5000000; baseMax += 8000000; }
-            if (motion) { baseMin += 4000000; baseMax += 7000000; }
-
-            const formatRp = (num) => 'Rp ' + Math.round(num).toLocaleString('id-ID');
-            document.getElementById('estimatedPrice').innerText = `${formatRp(baseMin)} - ${formatRp(baseMax)}`;
-        }
-
-        function sendWhatsAppEstimate() {
-            const price = document.getElementById('estimatedPrice').innerText;
-            const service = document.getElementById('estService').options[document.getElementById('estService').selectedIndex].text;
-            const text = `Halo Chronicle Pictures, saya berminat dengan layanan *${service}* dengan perkiraan estimasi *${price}*. Boleh kita diskusi lebih lanjut?`;
-            window.open(`https://wa.me/6288251467890?text=${encodeURIComponent(text)}`, '_blank');
-        }
-
-        // Portfolio Filter Logic
+        // 3. Portfolio Category Filtering
         function filterPortfolio(category) {
             const items = document.querySelectorAll('.portfolio-item');
             const btns = document.querySelectorAll('.portfolio-filter-btn');
@@ -1604,17 +1647,91 @@
             });
         }
 
-        // FAQ Toggle Logic
+        // 4. Video Lightbox Modal Controls
+        function openVideoModal(url) {
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('videoIframe');
+            if (modal && iframe) {
+                iframe.src = url + "?autoplay=1";
+                modal.classList.remove('hidden');
+            }
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('videoIframe');
+            if (modal && iframe) {
+                iframe.src = "";
+                modal.classList.add('hidden');
+            }
+        }
+
+        // 5. Interactive Budget Estimator logic
+        function calculateEstimate() {
+            const service = document.getElementById('estService').value;
+            const days = parseInt(document.getElementById('estDays').value) || 1;
+            const drone = document.getElementById('addDrone').checked;
+            const multicam = document.getElementById('addMulticam').checked;
+            const motion = document.getElementById('addMotion').checked;
+
+            let baseMin = 10000000;
+            let baseMax = 18000000;
+
+            if (service === 'company-profile') { baseMin = 15000000; baseMax = 25000000; }
+            else if (service === 'event-coverage') { baseMin = 8000000; baseMax = 15000000; }
+            else if (service === 'live-broadcast') { baseMin = 12000000; baseMax = 22000000; }
+            else if (service === 'product-launch') { baseMin = 18000000; baseMax = 30000000; }
+            else if (service === 'event-bumper') { baseMin = 5000000; baseMax = 10000000; }
+
+            let min = baseMin * days;
+            let max = baseMax * days;
+
+            if (drone) { min += 2500000; max += 4000000; }
+            if (multicam) { min += 3500000; max += 6000000; }
+            if (motion) { min += 3000000; max += 5000000; }
+
+            const formattedMin = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(min);
+            const formattedMax = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(max);
+
+            document.getElementById('estimatedPrice').innerText = `${formattedMin} - ${formattedMax}`;
+        }
+
+        function sendWhatsAppEstimate() {
+            const serviceSelect = document.getElementById('estService');
+            const serviceName = serviceSelect.options[serviceSelect.selectedIndex].text;
+            const days = document.getElementById('estDays').value;
+            const price = document.getElementById('estimatedPrice').innerText;
+
+            const text = `Halo Chronicle Pictures, saya tertarik dengan estimasi layanan:${encodeURIComponent("\n")}- Layanan: ${serviceName}${encodeURIComponent("\n")}- Durasi: ${days} hari${encodeURIComponent("\n")}- Estimasi Biaya: ${price}${encodeURIComponent("\n\n")}Mohon info prosedur konsultasi selanjutnya.`;
+            window.open(`https://wa.me/6288251467890?text=${text}`, '_blank');
+        }
+
+        // 6. Estimator Quick Modal
+        function openEstimatorModal() {
+            const modal = document.getElementById('estimatorModal');
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeEstimatorModal() {
+            const modal = document.getElementById('estimatorModal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function sendModalWhatsApp() {
+            const serviceSelect = document.getElementById('modalService');
+            const serviceName = serviceSelect.options[serviceSelect.selectedIndex].text;
+            const text = `Halo Chronicle Pictures, saya ingin berkonsultasi mengenai proyek: ${serviceName}`;
+            window.open(`https://wa.me/6288251467890?text=${encodeURIComponent(text)}`, '_blank');
+            closeEstimatorModal();
+        }
+
+        // 7. FAQ Accordion Toggle
         function toggleFaq(id) {
             const content = document.getElementById(`faqContent-${id}`);
             const icon = document.getElementById(`faqIcon-${id}`);
-            
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.classList.add('rotate-180');
-            } else {
-                content.classList.add('hidden');
-                icon.classList.remove('rotate-180');
+            if (content && icon) {
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
             }
         }
     </script>
